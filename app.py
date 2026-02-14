@@ -22,6 +22,7 @@ def create_app():
 
     return app
 
+# Create app here
 app = create_app()
 
 if __name__ == '__main__':
