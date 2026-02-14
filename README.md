@@ -6,11 +6,11 @@ A professional-grade, multi-user QR code generator and management system. This a
 
 ```
 qr-vault-pro/
-├── vercel.json         # Vercel deployment configuration
+├── vercel.json         # Vercel development configuration
 ├── app.py              # Main entry point; initializes Flask & Database
 ├── config.py           # Application configurations & environment settings
 ├── models.py           # SQLAlchemy Database models (Users & QRRecords)
-├── routes.py           # API Blueprint containing all functional endpoints
+├── routes.py           # API Blueprint containing all functional end points 
 ├── requirements.txt    # Python dependency list
 ├── .gitignore          # Git ignore file to exclude instance folder and other unwanted files
 ├── instance/           # Generated automatically (contains qr_vault.db)
@@ -26,7 +26,7 @@ qr-vault-pro/
 ## 🚀 Key Features
 
 - **Modular Architecture**: Clean separation of concerns between data models, routing logic, and application configuration.
-- **Multi-User Persistence**: Automatically generates a unique user_id stored in localStorage. History is filtered server-side to ensure privacy.
+- **Multi-User Persistence**: Automatically generates a unique user_id stored in local Storage. History is filtered server-side to ensure privacy.
 - **Relational Database**: Uses SQLite with Flask-SQLAlchemy to manage the relationship between users and their generated records.
 - **Client-Side Rendering**: High-speed QR generation using qrcode.js to minimize server overhead.
 - **Full CRUD Logic**: Users can create, view, download (PNG), and delete their history.
@@ -69,6 +69,3 @@ qr-vault-pro/
 - **Input Validation**: API endpoints enforce content checks and length limits.
 - **ORM Protection**: Using SQLAlchemy prevents SQL Injection attacks by using parameterized queries automatically.
 - **Blueprint Pattern**: The API is registered as a Flask Blueprint, allowing for easy scaling (e.g., adding an admin panel or authentication module in the future).
-
-### demo
-![Demo](https://qr-vault-pro.vercel.app/)
